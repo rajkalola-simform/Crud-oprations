@@ -1,0 +1,122 @@
+h1 {
+  text-align: center;
+}
+table {
+  width: 80%;
+  margin: 40px auto;
+  background-color: rgb(124, 154, 167);
+}
+
+table.list {
+  text-align: center;
+  width: 100%;
+}
+
+td {
+  border: 1px solid rgb(204, 200, 200);
+  text-align: left;
+  padding: 8px 15px;
+}
+
+tr:nth-child(even),
+table.list thread > tr {
+  background-color: rgb(204, 200, 200);
+}
+input[type="text"],
+input[type="number"],
+input[type="image"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(165, 161, 161);
+  border-radius: 4px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  margin-left: 700px;
+  background: #eee;
+  padding: 6px 20px;
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+#submit{
+  margin-left: 700px;
+  background: #eee;
+  padding: 6px 20px;
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  color : black;
+}
+
+#productId {
+  margin-left: 60px;
+}
+#productName {
+  margin-left: 35px;
+}
+#image {
+  margin-left: 38px;
+}
+#price {
+  margin-left: 92px;
+}
+
+#description{
+    margin-left: 50px;
+}
+
+input[type="submit"] :hover {
+  background: #4b99db;
+}
+
+button {
+  background: #eee;
+  padding: 6px 20px;
+  margin: 15px 0 10px;
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+  background: #4b99db;
+}
+
+#name {
+  margin-left: 550px;
+  width: 30%;
+}
+
+#showlist {
+  background-color: rgb(124, 154, 167);
+  width: 80%;
+}
+
+#btn {
+  background-color: rgb(164, 164, 244);
+}
+@media screen and (max-width: 820) {
+  .col-50,
+  .col-50,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="text"],
+  input[type="number"],
+  input[type="file"] {
+    width: 50%;
+    margin-top: 0;
+  }
+}

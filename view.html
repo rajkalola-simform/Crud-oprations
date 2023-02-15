@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="view.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+</head>
+
+<body>
+  <h1><b>View Product Data</b></h1>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off">
+                    <div>
+                        <label for="productId">Product Id</label>
+                        <input type="text" name="productId" id="productId" disabled>
+                    </div>
+                    <div>
+                        <label for="productName">Product Name</label>
+                        <input type="text" name="productName" id="productName" disabled>
+                    </div>
+                    <div>
+                        <!-- <label for="image">Select image:</label>
+                        <input type="text" id="image" name="image" accept="image/*" disabled> -->
+                        <label for="image" id="ilabel">Selected image:</label>
+                        <div id="image"></div>
+                    </div>
+                    <div>
+                        <label for="price">Price</label>
+                        <input type="number" name="price" id="price" disabled>
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <input type="text" name="description" id="description" disabled>
+                    </div>
+
+                    <div class="form_action--button">
+                        <a id="submit" href="index.html">Back</a>
+                    </div>
+                </form>
+    <script type="text/javascript" src="view.js"></script>
+</body>
+</html>
+

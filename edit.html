@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="edit.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+</head>
+
+<body>
+  <h1><b>Edit Product Data</b></h1>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off">
+                    <div>
+                        <label for="productId">Product Id</label>
+                        <input type="text" name="productId" id="productId" required>
+                    </div>
+                    <div>
+                        <label for="productName">Product Name</label>
+                        <input type="text" name="productName" id="productName" required> 
+                    </div>
+                    <div>
+                        <label for="image">Select image:</label>
+                        <input type="text" id="image" name="image" accept="image/*" required>
+                    </div>
+                    <div>
+                        <label for="price">Price</label>
+                        <input type="number" name="price" id="price" required>
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <input type="text" name="description" id="description" required>
+                    </div>
+
+                    <div class="form_action--button">
+                        <a id="submit" href="index.html" onclick="updateData()"> Update </a>
+                    </div>
+                </form>
+                <!-- <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Product Id</th>
+                                <th id="pid">Product Name</th>
+                                <th>Image</th>
+                                <th>Price</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td> -->
+            </td>
+        </tr>
+    </table>
+    <!-- <table class="list" id="showlist">
+        <form autocomplete="off" id="showDataForm">
+            <div class="form_action--button">
+            <input type="text" name="name" id="name" placeholder="Search Product Name">
+            <input type="submit" value="Submit" onclick="showData()" id="btn">
+            <input type="submit" value="Clear" onclick="clearData()" id="btn">
+        </div>
+        </form>
+        <thead>
+                <tr>
+                    <th>Product Id</th>
+                    <th>Product Name</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="pname">
+
+            </tbody>
+        </table> -->
+    <script type="text/javascript" src="edit.js"></script>
+</body>
+</html>
+

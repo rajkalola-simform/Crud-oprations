@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+</head>
+
+<body>
+  <h1><b>Product Management System</b></h1>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="productId">Product Id</label>
+                        <input type="number" name="productId" id="productId" required>
+                    </div>
+                    <div>
+                        <label for="productName">Product Name</label>
+                        <input type="text" name="productName" id="productName" required>
+                    </div>
+                    <div>
+                        <label for="image">Select image:</label>
+                        <input type="text" id="image" name="image"   required>
+                    </div>
+                    <div>
+                        <label for="price">Price</label>
+                        <input type="number" name="price" id="price" required >
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <input type="text" name="description" id="description" required>
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+                
+                <td>
+                    <table class="list" id="showlist">
+                        <form autocomplete="off" id="showDataForm">
+                            <div class="form_action--button">
+                            <input type="text" name="name" id="name" placeholder="Search Product Name">
+                            <input type="submit" value="Search" onclick="showData()" id="btn">
+                            <input type="submit" value="Clear" onclick="clearData()" id="btn">
+                        </div>
+                        </form>
+                        <thead>
+                                <tr>
+                                    <!-- <th>Product Id</th>
+                                    <th>Product Name</th>
+                                    <th>Image</th>
+                                    <th>Price</th>
+                                    <th>Description</th> -->
+                                </tr>
+                            </thead>
+                            <tbody id="pname">
+                
+                            </tbody>
+                        </table> 
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Product Id</th>
+                                <th id="pid">Product Name</th>
+                                <th>Image</th>
+                                <th>Price</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table--data">
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
+
